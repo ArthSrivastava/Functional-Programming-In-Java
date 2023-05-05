@@ -61,6 +61,8 @@ public class Main {
         List<Integer> list = Arrays.asList(1, 2, 3, 4, 5);
         Consumer<Integer> consumer = a -> System.out.println(a);
         list.forEach(consumer);
+        //or
+        list.forEach(System.out::println);
     }
 
     //Supplier interface -> it does not take any value rather returns some value
